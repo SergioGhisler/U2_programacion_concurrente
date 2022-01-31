@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public class Coche extends Thread {
 	
 	private enum STATE { 
@@ -50,7 +48,7 @@ public class Coche extends Thread {
 	}
 	public void terminarCruzar(){
 		try {
-			sleep(300);
+			sleep(1500);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

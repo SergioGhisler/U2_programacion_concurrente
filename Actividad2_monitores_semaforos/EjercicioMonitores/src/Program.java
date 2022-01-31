@@ -8,6 +8,7 @@ public class Program {
 		String dir;
 		Random random = new Random();
 		while(true) {
+			TimeUnit.SECONDS.sleep(1);
 			if (random.nextBoolean()) {
 				dir =  "Norte";
 			}else {
@@ -15,10 +16,6 @@ public class Program {
 			}
 			
 			new Coche(dir,puente);
-			
-			System.out.println(Puente.NList.size()+" coches esperando a cruzar al norte");
-			System.out.println(Puente.SList.size()+" coches esperando a cruzar al sur");
-
 		}
 	}
 }

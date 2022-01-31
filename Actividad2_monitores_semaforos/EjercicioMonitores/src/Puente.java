@@ -22,6 +22,7 @@ public class Puente {
 		}
 	}
 	
+	@SuppressWarnings("removal")
 	public synchronized void puenteCrudado(int id, String dir) {
 		if (dir == "Norte"){
 			NList.remove(new Integer(id));
