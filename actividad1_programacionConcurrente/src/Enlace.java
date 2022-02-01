@@ -49,7 +49,8 @@ public class Enlace extends Thread {
 
 				}else if (entrada.equals("Salir")) {
 					out.println("Hasta la proxima!");
-
+					clientSocket.close();
+					break;
 				} else {
 
 					if (isNumeric(entrada)) {
